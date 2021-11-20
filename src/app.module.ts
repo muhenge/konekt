@@ -13,7 +13,7 @@ import { PostModule } from './post/post.module';
       username: 'conectdev',
       password: 'Hello@23',
       database: 'conectdb',
-      entities: [],
+      entities: [__dirname + '/**/*.entity{.ts,.js}'],
       synchronize: true,
     }),
     PostModule,
