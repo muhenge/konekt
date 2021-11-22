@@ -1,0 +1,1 @@
+SELECT * FROM connectdb.posts;

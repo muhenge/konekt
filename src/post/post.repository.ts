@@ -4,6 +4,10 @@ import { postDto } from './dto/post.dto';
 
 @EntityRepository(Posts)
 export class PostRepository extends Repository<Posts> {
+  async getPosts(): Promise<Posts[]> {
+    return this.find();
+  }
+
   async createPost(createPostDto: postDto): Promise<Posts> {
     const { title, content } = createPostDto;
     const post = new Posts();
