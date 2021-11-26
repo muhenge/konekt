@@ -13,7 +13,7 @@ import {
 import { postDto } from './dto/post.dto';
 import { Posts } from './post.entity';
 import { PostService } from './post.service';
-@Controller('api/v1/posts')
+@Controller('api/posts')
 export class PostController {
   constructor(private readonly postService: PostService) {}
 
