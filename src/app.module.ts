@@ -10,7 +10,7 @@ import { PostModule } from './post/post.module';
       type: 'mysql',
       host: 'localhost',
       port: 3306,
-      username: 'connectdev',
+      username: 'nest',
       password: 'Hello@23',
       database: 'connectdb',
       entities: [__dirname + '/**/*.entity{.ts,.js}'],
